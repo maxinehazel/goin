@@ -1,4 +1,4 @@
-package main
+package goin_test
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"github.com/maxinekrebs/goin"
 )
 
-func main() {
+func Example() {
 	fileName := "/tmp/example.txt"
 	input, err := goin.ReadFromFile(fileName)
 	if err != nil {
