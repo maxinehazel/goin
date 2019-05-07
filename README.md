@@ -3,6 +3,8 @@
 Small go package for reading user input from an editor. Useful for building
 CLIs and the like.
 
+Currently supports vim but I am going to expand it to use a generic text editor
+eventually.
 
 ## Installation
 
