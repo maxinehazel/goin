@@ -54,7 +54,12 @@ func ReadBytesFromFile(tempBufferFileName string) ([]byte, error) {
 }
 
 func openEditor(fileName string) error {
-	cmd := exec.Command("vim", fileName)
+	ed := os.Getenv("EDITOR")
+	if ed == "" {
+		ed = "vim"
+	}
+
+	cmd := exec.Command(ed, fileName)
 	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout
 	return cmd.Run()
