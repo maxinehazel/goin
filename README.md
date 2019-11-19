@@ -3,6 +3,10 @@
 Small go package for reading user input from an editor. Useful for building
 CLIs and the like.
 
+Our canonical Git repository is located at
+https://git.maxinekrebs.dev/softpunk/goin. There is a mirror of the
+repository at https://github.com/softpunks/goin.
+
 Currently supports vim but I am going to expand it to use a generic text editor
 eventually.
 
